@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кав'ярня "Кавовий Аромат"</title>
+    <!-- Підключаємо bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Створюємо навігаційне меню -->
+    <!-- Створюємо навігаційне меню -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Логотип кав'ярні -->
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Кавовий Аромат" width="30" height="30" class="d-inline-block align-top">
+                Кавовий Аромат
+            </a>
+            <!-- Бургер-меню для мобільних пристроїв -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Перемкнути навігацію">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Посилання на різні сторінки сайту -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Створюємо заголовок сторінки -->
+    <div class="jumbotron jumbotron-fluid bg-dark text-white py-5 mb-0">
+        <div class="container text-center">
+            <h1 class="display-4">Ласкаво просимо до кав'ярні "Кавовий Аромат"</h1>
+            <p class="lead">Ми пропонуємо вам смачну каву, свіжу випічку та затишну атмосферу.</p>
+            <a href="#" class="btn btn-primary btn-lg">Замовити зараз</a>
+        </div>
+    </div>
+     
+    
+    <!-- Створюємо розділ з перевагами кав'ярні -->
+    <div class=" mt-5" >
+        <div class="container text-center">
+            <h1 class="display-4" style="margin-bottom: 50px"> Ми пропонуємо</h1>
+        </div>
+            
+        <div class="row" style="margin-top: 5px;">
+            <div class="col-md-4 text-center">
+                <img class="rounded-circle" src="coffee.jpg" alt="Кава" width="330" height="300">
+                <h3>Якісну каву</h3>
+                <p>Ми використовуємо тільки найкращі сорти кави з різних куточків світу. Наші бариста знають, як приготувати ідеальний напій для вашого смаку.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img class="rounded-circle" src="cake.jpg" alt="Випічка" width="310" height="300">
+                <h3>Свіжу випічку</h3>
+                <p>Ми печемо нашу випічку щодня з натуральних інгредієнтів. Ви можете насолодитися солодкими та солоними ласощами, які чудово поєднуються з кавою.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img class="rounded-circle" src="sofa.jpg" alt="Затишок" width="300" height="300" >
+                <h3>Затишну атмосферу</h3>
+                <p>Ми створили для вас зручне та приємне місце, де ви можете розслабитися, побалакати з друзями або просто насолодитися моментом. У нас є безкоштовний Wi-Fi та журнали для вашого дозвілля.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Створюємо розділ з меню кав'ярні -->
+    <section class="py-5  bg-dark" id="menu">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2 class="text-center text-white" style="margin-bottom: 50px" ;>Наше меню</h2>
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="coffee-cup.jpg" alt="..." height="150"/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Запашна кава</h5>
+                                <!-- Product price-->
+                                ₴40.00 - ₴80.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Замовити</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Знижка</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="muffins.jpg" alt="..." height="150" />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Мафіни</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">₴100.00</span>
+                                ₴80.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Замовити</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Знижка</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="tea.jpg" alt="..."  height="150"/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Чай</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">₴50.00</span>
+                                ₴25.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Замовити</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="croissants.jpg" alt="..." height="150"/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Круасани</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                ₴40.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Замовити</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Знижка</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="sandwich.jpg" alt="..." height="150"/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Сендвічі</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">₴50.00</span>
+                                ₴25.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Замовити</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="salad.jpg" alt="..." height="150"/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Салати</h5>
+                                <!-- Product price-->
+                                ₴120.00 - ₴280.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Замовити</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Знижка</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="ice-cream.jpg" alt="..." height="150"/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Морозиво</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">₴50.00</span>
+                                ₴32.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Замовити</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="bread.jpg" alt="..." height="150"/>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Багети</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                ₴40.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Замовити</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Створюємо розділ про нас -->
+    <div id="about" style="margin-bottom: 50px;">
+        <h2 class="text-center" style="margin-bottom: 50px";>Про нас</h2>
+        <div class="row">
+            <div class="col-lg-6 text-center">
+                <img src="coffe-hop.jpg" alt="Кав'ярня Кавовий Аромат" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <p>Кав'ярня "Кавовий Аромат" була відкрита у 2020 році двома друзями, які обожнюють каву та випічку. Ми хотіли створити місце, де можна насолодитися кави та випічку.</p>
+                <p>Ми прагнемо надати якісну каву, свіжу випічку та затишну атмосферу для задоволення наших клієнтів. Завдяки уважному відбору найкращих інгредієнтів ми турбуємося про ваш комфорт та задоволення.</p>
+                <p>Запрошуємо вас завітати до нашої кав'ярні та відчути "Кавовий Аромат". Ми впевнені, що ви полюбите наші напої та випічку!</p>
+            </div>
+        </div>
+    </div>
+    
+    
+        <!-- Футер з контактними даними -->
+        <div id="contacts">
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p> 2023 Кавовий Аромат</p>
+            <p>Адреса: Луцьк, Проспект Волі, 1, Телефон: +380980000000, Email: example@gmail.com</p>
+        </div>
+    </footer>
+</div>
+        </div> </div> <!-- Підключаємо bootstrap скрипти --> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+          </body> 
+</html>
